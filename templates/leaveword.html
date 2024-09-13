@@ -1,0 +1,27 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/css.css" />
+<title></title>
+</head>
+<body  background="/static/1.jpg" >
+<center>
+你好,{{name}}</br>
+<form action=/load/210/leaveword?name={{name}} method=post>
+    <textarea name=box rows=5 clos></textarea><br>
+
+<input type=submit value=发布>
+</form>
+<br>
+
+<form action=/load/210?name={{name}} method=post>
+
+<input type=submit value=注销>
+</form>
+</center>
+{% for comment in result%}
+        <div><h3>{{comment[0]}}:</h3><span>&nbsp &nbsp &nbsp{{comment[1]}}</span></div>
+{%endfor%}
+
+
+</body>
+</html>

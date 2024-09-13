@@ -1,0 +1,19 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/css.css" />
+<title>{{user[0]}}</title>
+</head>
+<body background="/static/2.jpg">
+<center>
+    你好，{{user[0]}}
+
+    <a href=/load/210/leaveword?name={{user[0]}}>留言板</a>
+
+    <form action=/load/210?name={{user[0]}} method=post>
+        <input type=submit value=注销>
+
+    </form>
+
+
+</center>
+</body>
